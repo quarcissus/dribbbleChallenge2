@@ -1,67 +1,115 @@
 * {
-	box-sizing: border-box;
-	padding: 0;
 	margin: 0;
-	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lexend Deca', sans-serif;
 }
+
 .landing-wrapper {
 	display: flex;
+	flex-direction: row;
 	height: 100vh;
 	width: 100vw;
 }
-.menu-wrapper {
-	flex: 0.15;
+
+.menu {
+	width: 100%;
+	height: 100%;
+	flex: 0.25;
 }
 
-.description-wrapper {
-	margin-top: 5%;
-	flex: 1;
-	height: 85vh;
-}
-.description-container {
+.information {
+	width: 100%;
+	height: 100%;
+	flex: 0.6;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
 }
-.description-container .title {
-	flex: 0.1;
-	height: 100%;
+
+.information .title {
+	flex: 0.8;
+	margin-top: 10%;
+
 }
-.description-container .title h1 {
-	font-size: 5vw;
-	letter-spacing: 2px;
+
+.information .title div:first-child {
+	font-size: -moz-calc(5vw + 1rem);
+	font-size: -webkit-calc(5vw + 1rem);
+	font-size: -o-calc(5vw + 1rem);
+	font-size: calc(5vw + 1rem)
 }
-.description-container .description {
-	flex: 0.3;
-	height: 100%;
-	margin-top: 5%;
-	width: 70%;
-}
-.description-container .image-wrapper {
+
+.information .title div:last-child {
+	font-size: -moz-calc(1.4vw + 1rem);
+	font-size: -webkit-calc(1.4vw + 1rem);
+	font-size: -o-calc(1.4vw + 1rem);
+	font-size: calc(1.4vw + 1rem);
 	display: flex;
-	flex: 1;
-	height: 100%;
-	margin-top: 5%;
-	max-height: 350px;
+	justify-content: space-between;
 	width: 70%;
+
 }
 
-.image-wrapper .img-text {
-	flex: 1;
-	background: rgb(47, 47, 47);
+.information .title div:last-child a {
+	text-decoration: none;
+	color: rgb(8, 145, 187);
 }
-.image-wrapper .img-container {
+
+.information .description {
+	flex: 0.5;
+	font-size: 1.1vw;
+	color: rgb(100, 100, 100);
+}
+
+.information .img-information {
+	flex: 1.5;
+	display: flex;
+	flex-direction: row;
+}
+
+.information .img-information div:first-child {
+	height: 100%;
+	width: 100%;
+	padding: 5% 0 5% 5%;
+}
+
+.information .img-information div:first-child div {
+	background-color: rgb(124, 124, 124);
+	width: 100%;
+	height: 100%;
+}
+
+.information .img-information div:last-child {
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 5% 5% 5% 0;
+}
+
+.information .img-information div:last-child img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.selectors {
+	flex: 0.2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.landing-img {
+	width: 100%;
+	height: 100%;
 	flex: 1;
 }
 
-.image-wrapper .img-container img {
+.landing-img img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	object-position: bottom;
-}
-.img-landing {
-	flex: 1px;
 }
