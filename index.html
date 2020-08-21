@@ -1,68 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-  <title>Document</title>
-</head>
-
-<body>
-  <main>
-    <div class="landing-wrapper">
-      <div class="menu">
-        <div><i class="fas fa-bars"></i></div>
-        <div></div>
-      </div>
-      <div class="information">
-        <div class="title">
-          <div>Statement</div>
-          <div class="title-nav">
-            <div class=" title-link title-link-h">
-              <a href="#" class=" selected">autumn</a>
+  <body>
+    <main>
+      <div class="landing-wrapper">
+        <div class="menu">
+          <div class="menu-org"><i class="fas fa-bars"></i></div>
+          <div class="hr-container"><hr class="hr-menu" /></div>
+          <div class="menu-text-container">
+            <p class="menu-text">modern style</p>
+          </div>
+        </div>
+        <div class="information">
+          <div class="title">
+            <div>Statement</div>
+            <div class="title-nav">
+              <div class="title-link title-link-h">
+                <a onclick="change('a')" class="selected">autumn</a>
+              </div>
+              <div class="title-link">
+                <a onclick="change('w')">winter</a>
+              </div>
             </div>
-            <div class="title-link">
-              <a href="#">winter</a>
+          </div>
+          <div class="description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit ses.
+              Nostrum cumque officiis ea cum, labore corporis! Quo ors,
+              explicabo saepe nemo laboriosam error quod totam ort tempore
+              cupiditate east lop traloi.
+            </p>
+          </div>
+          <div class="img-information">
+            <div class="img-information-links">
+              <div class="img-info-link"><a href=""> SWEATSHIRTS</a></div>
+              <div class="img-info-link"><a href=""> KNITWEAR</a></div>
+              <div class="img-info-link"><a href=""> SHOES</a></div>
+              <div class="img-info-link"><a href=""> BAGS</a></div>
+              <div class="img-info-link"><a href=""> ACCESSORIES</a></div>
+            </div>
+            <div class="imgs-information-imgs">
+              <img
+                id="menu-slider1"
+                class="img-trans img-shown"
+                src="./img/summer1.jpg"
+                alt=""
+              />
+              <img
+                id="menu-slider2"
+                class="img-trans img-hidden"
+                src="./img/winter1.jpg"
+                alt=""
+              />
             </div>
           </div>
-        </div>
-        <div class="description">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit ses.
-            Nostrum cumque officiis ea cum, labore corporis! Quo ors,
-            explicabo saepe nemo laboriosam error quod totam ort tempore
-            cupiditate east lop traloi.
-          </p>
-        </div>
-        <div class="img-information">
-          <div class="img-information-links">
-            <div class="img-info-link"><a href=""> SWEATSHIRTS</a></div>
-            <div class="img-info-link"><a href=""> KNITWEAR</a></div>
-            <div class="img-info-link"><a href=""> SHOES</a></div>
-            <div class="img-info-link"><a href=""> BAGS</a></div>
-            <div class="img-info-link"><a href=""> ACCESSORIES</a></div>
-          </div>
-          <div class="imgs-information-imgs">
-            <img src="./mujer-desc.jpg" alt="" />
+          <div class="selectors">
+            <i class="fas fa-arrow-left"></i><i class="far fa-dot-circle"></i
+            ><i class="fas fa-arrow-right"></i>
           </div>
         </div>
-        <div class="selectors">
-          <i class="fas fa-arrow-left"></i><i class="far fa-dot-circle"></i><i class="fas fa-arrow-right"></i>
+        <div class="landing-img">
+          <img
+            id="landing-slider1"
+            class="img-trans img-shown"
+            src="./img/autum2.jpg"
+            alt=""
+          />
+          <img
+            id="landing-slider2"
+            class="img-trans img-hidden"
+            src="./img/winter2.jpg"
+            alt=""
+          />
         </div>
+        <div class="right-menu"></div>
       </div>
-      <div class="landing-img">
-        <img src="./autum2.jpg" alt="" />
-      </div>
-      <div class="right-menu"></div>
-    </div>
-  </main>
-</body>
+    </main>
 
+    <script src="app.js"></script>
+  </body>
 </html>
