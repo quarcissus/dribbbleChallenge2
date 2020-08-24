@@ -41,10 +41,10 @@
             <div>Statement</div>
             <div class="title-nav">
               <div class="title-link title-link-h">
-                <a onclick="change('a')" class="selected">autumn</a>
+                <a id="autumn" class="selected">autumn</a>
               </div>
               <div class="title-link">
-                <a onclick="change('w')">winter</a>
+                <a id="winter">winter</a>
               </div>
             </div>
           </div>
@@ -65,18 +65,10 @@
               <div class="img-info-link"><a href=""> ACCESSORIES</a></div>
             </div>
             <div class="imgs-information-imgs">
-              <img
-                id="menu-slider1"
-                class="img-trans img-shown"
-                src="./img/summer1.jpg"
-                alt=""
-              />
-              <img
-                id="menu-slider2"
-                class="img-trans img-hidden"
-                src="./img/winter1.jpg"
-                alt=""
-              />
+              <div class="img-menu-container">
+                <div class="slider menu-slider1"></div>
+                <div class="slider menu-slider2"></div>
+              </div>
             </div>
           </div>
           <div class="selectors">
@@ -85,23 +77,43 @@
           </div>
         </div>
         <div class="landing-img">
-          <img
-            id="landing-slider1"
-            class="img-trans img-shown"
-            src="./img/autum2.jpg"
-            alt=""
-          />
-          <img
-            id="landing-slider2"
-            class="img-trans img-hidden"
-            src="./img/winter2.jpg"
-            alt=""
-          />
+          <div class="landing-container">
+            <div class="slider landing-slider1"></div>
+            <div class="slider landing-slider2"></div>
+          </div>
         </div>
-        <div class="right-menu"></div>
+        <div class="right-menu">
+          <div class="icon-container">
+            <i class="far fa-bell"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <div class="icon-container">
+            <i class="far fa-eye"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fas fa-tv"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fas fa-play"></i>
+          </div>
+          <div class="icon-container">
+            <i class="far fa-comment-alt"></i>
+          </div>
+          <div class="icon-container">
+            <i class="far fa-thumbs-up"></i>
+          </div>
+          <div class="last-icon">
+            <p>MORE</p>
+          </div>
+        </div>
       </div>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
